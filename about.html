@@ -1,0 +1,87 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="style.css" type="text/css">
+
+      <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+      <!-- font-family: 'Courier Prime', monospace; -->
+      <link href="https://fonts.googleapis.com/css?family=Lustria&display=swap" rel="stylesheet">
+
+      <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="app.js"></script>
+      <title>Sharon Ye</title>
+    </head>
+    <body>
+      <div class="container-fluid landing_a">
+        <div class="row navrow">
+          <div class = "col-2 logo">
+            <a href = "./home.html"><img src="./images/cursivename_black.png" class = "cursivename"></a>
+          </div>
+          <!-- <div class = "col-5"></div> -->
+          <div class = "col navbar" style="background-color: white;">
+            <a href = "./home.html" class = "navlinks"><h3 class = "nav_black"> <span class="underline--magical"> Portfolio </span> </h3></a>
+            <a href = "./resume.html" class = "navlinks"><h3 class = "nav_black"> <span class="underline--magical"> Resume </span> </h3></a>
+            <a href = "./about.html" class = "navlinks"><h3 class = "nav_black"> <span class="underline--magical"> About </span> </h3></a>
+            <a href = "./blog.html" class = "navlinks"><h3 class = "nav_black"> <span class="underline--magical"> Blog </span> </h3></a>
+          </div>
+          <!-- <div class = "col-1"></div> -->
+        </div>
+        <div class="row landingrow" style="margin-top: 0rem !important;">
+          <div class="col-2"></div>
+          <div class="col-3 section_pic" style="margin-right:2rem;">
+            <img src = "./images/portrait.jpg" style="width: 17.5rem;">
+            <a href="javascript:;" style="text-decoration: none;"><div class = "floating" onclick="changetext()"><p id ="chat">Let's Chat!</p></div></a>
+          </div>
+          <div class="col-5">
+            <h3 style="font-size: 2.5rem; color: black;">Get to know me!</h3>
+            <p> <b style="color: #66DEF7;">Hey, I'm Sharon!</b> A Bay Area native, I just graduated from UC Berkeley with a dual degree in Computer
+              Sciece and Business Administration. I am now situated in Manhattan where
+            I work as a quantitative analyst. <br><br>
+
+            I am a huge traveler and hope to visit as many places as possible before I die. Some of my favorite
+            countries have been Czech Republic, Croatia, and Korea. Right now, the top destinations on my
+            bucket list are Johannesburg, Bolivia, and The Maldives. Besides traveling, I also love
+            trying new foods and hopping around cafes. I have a Master Food List where I keep track of all the food and
+            dessert places around the world I want to try. Some fun facts about me, I have a collection of several
+            hundred differently designed wooden pencils from childhood and I cried
+            the first time I tried the spicy ramen challenge (it's one of my favorite snacks now). <br><br>
+
+            I've always been passionate about art and design. I think it's beautiful
+            how much a design can say and how much impact and meaning it can carry. I especially love drawing people, but
+            I am always looking for a new challenge. <b style="color: #66DEF7;">If you would like to
+            work with me and have any design requests, I'd love to connect!</b> Feel free to shoot me an email if
+            you just want to chat as well - if you want tips or advice on navigating through college, living
+            in the Bay Area, or anything else, I'd love to help in any way :)
+            </p>
+            <div style = "display: flex; justify-content: center;">
+              <a href="mailto: sharon10ye@gmail.com" class="fa fa-google"></a>
+              <a href="https://www.linkedin.com/in/sharon-ye/" class="fa fa-linkedin"></a>
+              <a href="https://www.instagram.com/y_sharon_/" class="fa fa-instagram"></a>
+              <a href="https://www.facebook.com/sharon.ye.7" class="fa fa-facebook"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FOOTERRRRRRRRRRR -->
+      <div class = "container-fluid footer"></div>
+    </body>
+  </html>
+
+  <script>
+    function changetext() {
+      var text = document.getElementById("chat");
+      text.innerHTML = 'sharon10ye@gmail.com';
+      setTimeout(changeback, 2000);
+    }
+    function changeback() {
+      var text = document.getElementById("chat");
+      text.innerHTML = "Let's Chat!";
+    }
+  </script>

@@ -1,0 +1,504 @@
+body, html {
+  font-family: 'Courier Prime', monospace !important;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+
+@media all and (min-width: 1024) {
+  body, html {
+      font-size: 20px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  body, html {
+      font-size: 14px;
+  }
+}
+
+
+@media all and (max-width: 812px) {
+  body, html {
+      font-size: 8px;
+  }
+}
+
+
+
+p {
+  font-size: 0.75rem;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.landing {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFCA10;
+  overflow: scroll;
+}
+
+.landingrow {
+  display: flex;
+  align-items: center;
+  margin-top: -5rem;
+  flex-grow: 1;
+}
+
+.landingtitle {
+  font-size: 3.5rem;
+  color: #484848;
+}
+.landingtext {
+  font-size: 0.8rem;
+  color: #484848;
+  margin-top: 5rem;
+}
+.navrow {
+  display: flex;
+  align-items: flex-start;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-left: 4rem;
+  justify-content: flex-end !important;
+
+ background-color: #FFCA10;
+ padding: 1rem 0rem 1rem 3rem !important;
+ position: fixed !important;
+ width: auto !important;
+ right: 0;
+ z-index: 100;
+
+}
+
+.nav {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: bold;
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #31393C 0%, #31393C 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0em;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease-in;
+}
+.underline--magical:hover{
+  background-size: 100% 20%;
+}
+.navlinks{
+  text-decoration: none;
+  color: white;
+  margin-right: 2rem;
+}
+
+.navlinks:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.cursivename {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 11rem;
+  height: auto;
+}
+.flowergirl {
+  height: 23.5rem;
+  width: auto;
+  margin-top: -2.75px;
+  margin-left: 1rem;
+  -webkit-transform: scaleX(-1);
+  transform: rotate(-15deg) scaleX(-1);
+}
+.coffeebeans{
+  height: 20rem;
+  margin-top: -100%;
+  margin-left: 1.5rem;
+}
+.coffee{
+  position: absolute;
+}
+
+/* word that changes */
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(1.25rem);
+  transform-origin: 50% 50% 1.25rem;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.word {
+  position: absolute;
+  opacity: 0;
+  /* font-size: 4rem; */
+  font-size: 5vw;
+  color: white;
+  margin-top: -1rem;
+}
+/* word that changes */
+
+/* ~~~~~~~~~~~~~ END OF LANDING ~~~~~~~~~~~~~ */
+
+.portfolio-title {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.title-text {
+  font-size: 3.5rem;
+  color: #484848;
+}
+.portfolio-description {
+  text-align: center;
+}
+
+.portfolio_img {
+  max-width: 100%;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.imagerows {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.imagecols {
+  display: flex;
+  align-items: flex-start;
+}
+
+.imagecols2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    /* margin-left: -100%; */
+    height: 100%;
+    text-align: center;
+    overflow: scroll;
+}
+
+.card-title {
+    font-size: 0.75rem;
+    color: #4d4d4d;
+    visibility: hidden;
+    transition-delay: 0s;
+    height: 100%;
+    overflow: scroll;
+    padding: 2.5rem;
+}
+
+
+.imagecols:hover .portfolio_img {
+    opacity: .2;
+}
+
+.imagecols:hover .card-body .card-title {
+    visibility: visible;
+    transition-delay: 0.25s;
+}
+
+.imgtitle {
+  font-size: 1.25rem !important;
+}
+
+#traditionallink {
+  font-size: .7rem;
+  color: #A4A4A4;
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.trad_portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tradart {
+  height: 9rem;
+  margin: 0.3rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+.landing_r {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #4192E9;
+}
+
+.resumelanding {
+  width: 20rem;
+  margin-top: -1.5rem;
+  height: 20rem;
+}
+
+.floatarrow {
+  animation: floata 2s ease-in-out infinite;
+  color:#8DC2FC;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  /* text-shadow: white 0px 0px 30px; */
+}
+
+@keyframes floata {
+  0% {
+    transform: translatey(0rem);
+  }
+  50% {
+    transform: translatey(-1rem);
+  }
+  100% {
+    transform: translatey(0rem);
+  }
+}
+
+.resume_title {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.resume_description {
+  color: white;
+  font-size: 0.8rem;
+}
+.section_titles {
+  font-size: 2.5rem;
+  color: #484848;
+}
+.section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.experiences {
+  margin-top: 5rem;
+
+}
+.bearpic {
+  width: 14rem;
+  height: 14rem;
+}
+.section_text {
+  text-align: left;
+  color: #484848;
+}
+.section_pic {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+
+}
+.section_divider {
+  width: 100%;
+}
+.experience_titles {
+  font-size: 1.25rem;
+  color: #F9B5AA;
+}
+
+.descriptions {
+  text-align: left;
+  font-size: 0.65rem;
+}
+.keywords {
+  color: #F9B5AA;
+}
+.role {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #C4C4C4;
+  text-align: right;
+}
+.skills {
+  font-size: 0.65rem;
+  color: #484848;
+}
+.progress {
+  height: 0.8rem !important;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.landing_a {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.nav_black {
+  font-size: 0.9rem;
+  color: black;
+  font-weight: bold;
+}
+
+.fa {
+  padding: 0.6rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+.fa-google {
+  background: #FF4B4B;
+  color: white;
+}
+.fa-linkedin {
+  background: #5FAFFF;
+  color: white;
+}
+.fa-instagram {
+  background: #FFB15F;
+  color: white;
+}
+.fa-facebook {
+  background: #4C7DFF;
+  color: white;
+}
+
+.contactlinks:hover{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* floating thing in about */
+.floating {
+  margin-top: 1.5rem;
+  width: 17.5rem;
+}
+
+
+.floating p {
+  transform: translatey(0rem);
+  animation: float 5s ease-in-out infinite;
+  mix-blend-mode: multiply;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #FFCE1E;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  border-radius: 0.55rem;
+  box-shadow: 1rem 1rem #BAAB98;
+}
+.floating p:after {
+  transform: translatey(0rem);
+  animation: float2 5s ease-in-out infinite;
+  content: ".";
+  font-weight: bold;
+  -webkit-text-fill-color: #FFCE1E;
+  text-shadow: 1.1rem 1.1rem #B0A3A7;
+  text-align: left;
+  font-size: 2.75rem;
+  width: 2.75rem;
+  height: .55rem;
+  line-height: 1.5rem;
+  border-radius: .55rem;
+  background-color: #FFCE1E;
+  position: absolute;
+  display: block;
+  bottom: -1.5rem;
+  left: 0;
+  box-shadow: 1.1rem 1.1rem #BAAB98;
+  z-index: -2;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0rem);
+  }
+  50% {
+    transform: translatey(-1rem);
+  }
+  100% {
+    transform: translatey(0rem);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    line-height: 1.5rem;
+    transform: translatey(0rem);
+  }
+  55% {
+    transform: translatey(-1rem);
+  }
+  60% {
+    line-height: 0.5rem;
+  }
+  100% {
+    line-height: 1.5rem;
+    transform: translatey(0rem);
+  }
+}
+
+
+
+/* /////////////// footer /////////////// */
+.footer {
+  margin-top: 7.5rem;
+  height: 5rem;
+  width: 100%;
+  background-color: #FFCE1E;
+}
