@@ -2,6 +2,24 @@ var speed = 'medium';
 
 $(document).ready(function() {
 
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+      $(".cursivename").css("width","3rem");
+      $(".cursivename").css("margin","0.3rem 0rem 0rem 1rem");
+      $(".nav").css("font-size","0.7rem");
+      $(".navbar").css("margin","0.5rem 0rem 0.5rem 0rem");
+      $(".navrow").css("z-index","100");
+    } else {
+      $(".cursivename").css("width","11rem");
+      $(".cursivename").css("margin","1rem 0rem 0rem 1rem");
+      $(".nav").css("font-size","0.9rem");
+      $(".navbar").css("margin","1rem 0rem 0rem 0rem");
+      $(".navrow").css("z-index","0");
+    }
+  }
+
   $("#traditionallink").on("click", function() {
     var el = $(this);
     el.text() == el.data("text-swap")

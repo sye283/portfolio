@@ -45,7 +45,6 @@ p {
 .landingrow {
   display: flex;
   align-items: center;
-  margin-top: -5rem;
   flex-grow: 1;
 }
 
@@ -61,27 +60,24 @@ p {
 .navrow {
   display: flex;
   align-items: flex-start;
+  position: fixed !important;
+  width: 100%;
 }
 .navbar {
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
-  margin-left: 4rem;
   justify-content: flex-end !important;
-
- background-color: #FFCA10;
- padding: 1rem 0rem 1rem 3rem !important;
- position: fixed !important;
- width: auto !important;
- right: 0;
- z-index: 100;
-
+  width: auto !important;
+  right: 0 !important;
+  transition: 0.3s;
 }
 
 .nav {
   font-size: 0.9rem;
   color: white;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .underline--magical {
@@ -110,6 +106,7 @@ p {
   margin-left: 1rem;
   width: 11rem;
   height: auto;
+  transition: 0.3s;
 }
 .flowergirl {
   height: 23.5rem;
@@ -377,9 +374,7 @@ p {
 }
 
 .nav_black {
-  font-size: 0.9rem;
-  color: black;
-  font-weight: bold;
+  color: black !important;
 }
 
 .fa {
