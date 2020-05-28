@@ -29,11 +29,15 @@
         </div>
       </div>
       <div class="container-fluid landing_a">
-        <div class="row landingrow" style="margin-top: 6rem !important;">
+        <div class="row landingrow" style="margin-top: 7rem !important;">
           <div class="col-2"></div>
           <div class="col-3 section_pic" style="margin-right:2rem;">
             <img src = "./images/portrait.jpg" style="width: 17.5rem;">
-            <a href="javascript:;" style="text-decoration: none;"><div class = "floating" onclick="changetext()"><p id ="chat">Let's Chat!</p></div></a>
+            <a href="javascript:;" style="text-decoration: none;">
+              <div class = "floating" onclick="changetext()">
+                <p id ="chat">Let's Chat!</p>
+              </div>
+            </a>
           </div>
           <div class="col-5">
             <h3 style="font-size: 2.5rem; color: black;">Get to know me!</h3>
@@ -57,10 +61,10 @@
             in the Bay Area, or anything else, I'd love to help in any way :)
             </p>
             <div style = "display: flex; justify-content: center;">
-              <a href="mailto: sharon10ye@gmail.com" class="fa fa-google"></a>
-              <a href="https://www.linkedin.com/in/sharon-ye/" class="fa fa-linkedin"></a>
-              <a href="https://www.instagram.com/y_sharon_/" class="fa fa-instagram"></a>
-              <a href="https://www.facebook.com/sharon.ye.7" class="fa fa-facebook"></a>
+              <a onclick="window.open('mailto: sharon10ye@gmail.com')" href="javascript:;" class="fa fa-google"></a>
+              <a onclick="window.open('https://www.linkedin.com/in/sharon-ye/')" href="javascript:;" class="fa fa-linkedin"></a>
+              <a onclick="window.open('https://www.instagram.com/y_sharon_/')" href="javascript:;" class="fa fa-instagram"></a>
+              <a onclick="window.open('https://www.facebook.com/sharon.ye.7')" href="javascript:;" class="fa fa-facebook"></a>
             </div>
           </div>
         </div>
@@ -74,9 +78,29 @@
 
   <script>
     function changetext() {
+      var t = null;
+
       var text = document.getElementById("chat");
-      text.innerHTML = 'sharon10ye@gmail.com';
-      setTimeout(changeback, 2000);
+      if (text.innerHTML == 'Let\'s Chat!') {
+        text.innerHTML = "<i class='fa fa-copy' style='margin: 0 1rem 0 0; font-size:1.4rem;'></i>"+" sharon10ye@gmail.com";
+        if (t !== null) { window.clearTimeout(t); }
+        t = setTimeout(changeback, 2000);
+      } else {
+        var copyText = document.createElement('textarea');
+        copyText.value = "sharon10ye@gmail.com";
+        copyText.setAttribute('readonly', '');
+        copyText.style = {position: 'absolute', left: '-9999px'};
+        document.body.appendChild(copyText)
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+        document.execCommand("copy");
+        document.body.removeChild(copyText);
+
+        text.innerHTML = "email copied to clipboard!";
+        setTimeout(changeback, 1500);
+      }
+
+
     }
     function changeback() {
       var text = document.getElementById("chat");
