@@ -77,15 +77,17 @@
   </html>
 
   <script>
+    var t = null;
     function changetext() {
-      var t = null;
 
       var text = document.getElementById("chat");
       if (text.innerHTML == 'Let\'s Chat!') {
-        text.innerHTML = "<i class='fa fa-copy' style='margin: 0 1rem 0 0; font-size:1.4rem;'></i>"+" sharon10ye@gmail.com";
-        if (t !== null) { window.clearTimeout(t); }
         t = setTimeout(changeback, 2000);
+
+        text.innerHTML = "<i class='fa fa-copy' style='margin: 0 1rem 0 0; font-size:1.4rem;'></i>"+" sharon10ye@gmail.com";
       } else {
+        if (t != null) { window.clearTimeout(t); }
+
         var copyText = document.createElement('textarea');
         copyText.value = "sharon10ye@gmail.com";
         copyText.setAttribute('readonly', '');
