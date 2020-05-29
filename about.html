@@ -17,8 +17,25 @@
       <title>Sharon Ye</title>
     </head>
     <body>
-      <div class="navrow" style="background-color: white;">
-        <div class = "col-2 logo">
+      <a href = "./index.html" style="position: fixed; z-index: 200;"><img src="./images/cursivename_black.png" class = "cursivename"></a>
+      <nav class="navbar navbar-light fixed-top navbar-expand-md" style="background-color: white; margin: 0; padding: 0; align-items: start; z-index:100;">
+        <!-- <a href = "./index.html" class="navbar-brand d-flex w-50 mr-auto"><img src="./images/cursivename_black.png" class = "cursivename"></a> -->
+        <button class="navbar-toggler justify-content-end ml-auto" style="margin-top:1rem;margin-right:2rem;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100 justify-content-end collapseclass" id="navbarNav" style="margin-right:2rem; margin-top:1rem;background: white;">
+          <a href = "./index.html" class = "nav-item nav-link"><h3 class = "nav nav_black" style="justify-content: center;"> <span class="underline--magical"> Portfolio </span> </h3></a>
+          <div class="dropdown-divider"></div>
+          <a href = "./resume.html" class = "nav-item nav-link"><h3 class = "nav nav_black" style="justify-content: center;"> <span class="underline--magical"> Resume </span> </h3></a>
+          <div class="dropdown-divider"></div>
+          <a href = "./about.html" class = "nav-item nav-link"><h3 class = "nav nav_black" style="justify-content: center;"> <span class="underline--magical"> About </span> </h3></a>
+          <div class="dropdown-divider"></div>
+          <a href = "./blog.html" class = "nav-item nav-link active"><h3 class = "nav nav_black" style="justify-content: center;"> <span class="underline--magical"> Blog </span> </h3></a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </nav>
+      <!-- <div class="navrow" style="background-color: white;">
+        <div class = "col-2">
           <a href = "./index.html"><img src="./images/cursivename_black.png" class = "cursivename"></a>
         </div>
         <div class = "col navbar">
@@ -27,7 +44,7 @@
           <a href = "./about.html" class = "navlinks"><h3 class = "nav nav_black"> <span class="underline--magical"> About </span> </h3></a>
           <a href = "./blog.html" class = "navlinks"><h3 class = "nav nav_black"> <span class="underline--magical"> Blog </span> </h3></a>
         </div>
-      </div>
+      </div> -->
       <div class="container-fluid landing_a">
         <div class="row landingrow" style="margin-top: 7rem !important;">
           <div class="col-2"></div>
@@ -73,6 +90,11 @@
 
       <!-- FOOTERRRRRRRRRRR -->
       <div class = "container-fluid footer"></div>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </body>
   </html>
 
@@ -82,7 +104,7 @@
 
       var text = document.getElementById("chat");
       if (text.innerHTML == 'Let\'s Chat!') {
-        t = setTimeout(changeback, 2000);
+        t = setTimeout(changeback, 4000);
 
         text.innerHTML = "<i class='fa fa-copy' style='margin: 0 1rem 0 0; font-size:1.4rem;'></i>"+" sharon10ye@gmail.com";
       } else {
