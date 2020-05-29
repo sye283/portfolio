@@ -5,23 +5,49 @@ body, html {
   font-size: 20px;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   body, html {
       font-size: 20px;
   }
+
 }
 
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 992px) {
   body, html {
       font-size: 14px;
   }
+  .section_pic {
+    align-items: center !important;
+  }
+  .aboutme {
+    margin: 5rem 25% 0 25%;
+  }
+  .resumewords {
+    text-align: center;
+    margin: 0 25% 0 25%;
+  }
+
 }
 
-@media all and (max-width: 772px) {
+@media all and (max-width: 768px) {
   body, html {
-      font-size: 8px;
+      font-size: 14px;
   }
+  .section_pic {
+    align-items: center !important;
+  }
+  .aboutme {
+    margin: 5rem 15% 0 15%;
+  }
+  .resumewords {
+    text-align: center;
+    margin: 0 15% 0 15%;
+  }
+  .coffee {
+    display: none;
+  }
+
 }
 
 
@@ -48,7 +74,8 @@ p {
 }
 
 .landingtitle {
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
+  font-size: 5vw;
   color: #484848;
 }
 .landingtext {
@@ -135,10 +162,17 @@ p {
 .word {
   position: absolute;
   opacity: 0;
+  /* left:0; */
   /* font-size: 4rem; */
   font-size: 5vw;
   color: white;
   margin-top: -1rem;
+}
+.changers {
+  width: 100%;
+  text-align: center !important;
+  display: flex;
+  justify-content: center !important;
 }
 /* word that changes */
 
@@ -311,7 +345,12 @@ p {
   align-items: flex-end;
   flex-direction: column;
   text-align: right;
-
+}
+.section_pic_bear {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
 }
 .section_divider {
   width: 100%;
