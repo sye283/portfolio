@@ -18,7 +18,11 @@ body, html {
   }
 }
 
-
+@media all and (max-width: 772px) {
+  body, html {
+      font-size: 9px;
+  }
+}
 
 
 p {
