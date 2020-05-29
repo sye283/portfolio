@@ -9,16 +9,16 @@ $(document).ready(function() {
       $(".cursivename").css("width","3rem");
       $(".cursivename").css("margin","0.3rem 0rem 0rem 1rem");
       $(".nav").css("font-size","0.7rem");
-      $(".collapseclass").css("margin-top","0rem");
-      $(".navbar-toggler").css("margin-top","0rem");
+      $(".collapseclass").css("padding-top","0rem");
+      $(".navbar-toggler").css("padding-top","0rem");
       $(".navbar").css("align-items","center");
       $(".navbar").css("height","3rem");
     } else {
       $(".cursivename").css("width","11rem");
       $(".cursivename").css("margin","1rem 0rem 0rem 1rem");
       $(".nav").css("font-size","0.9rem");
-      $(".collapseclass").css("margin-top","1rem");
-      $(".navbar-toggler").css("margin-top","1rem");
+      $(".collapseclass").css("padding-top","1rem");
+      $(".navbar-toggler").css("padding-top","1rem");
       $(".navbar").css("align-items","start");
       $(".navbar").css("height","auto");
     }
