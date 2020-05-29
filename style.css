@@ -47,6 +47,13 @@ body, html {
   .coffee {
     display: none;
   }
+  .resume_title {
+    font-size: 10vw !important;
+  }
+  .bearpic {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
 
 }
 
@@ -351,6 +358,7 @@ p {
   align-items: flex-end;
   flex-direction: column;
   text-align: right;
+  justify-content: center;
 }
 .section_divider {
   width: 100%;
