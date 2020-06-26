@@ -216,6 +216,10 @@ p {
   transition: opacity 0.2s ease-in-out;
 }
 
+.card-body::-webkit-scrollbar {
+    display: none;
+}
+
 .imagerows {
   display: flex;
   justify-content: center;
