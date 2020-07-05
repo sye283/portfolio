@@ -1,0 +1,176 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168068689-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-168068689-1');
+      </script>
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="style.css" type="text/css">
+
+      <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+      <!-- font-family: 'Courier Prime', monospace; -->
+      <link href="https://fonts.googleapis.com/css?family=Lustria&display=swap" rel="stylesheet">
+
+      <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="app.js"></script>
+      <title>Sharon Ye</title>
+    </head>
+    <body>
+      <a href = "./index.html" style="position: fixed; z-index: 200;"><img src="./images/cursivename_black.png" class = "cursivename"></a>
+      <nav class="navbar navbar-light fixed-top navbar-expand-md" style="background-color: white; margin: 0; padding: 0; align-items: start; z-index:100;">
+        <button class="navbar-toggler justify-content-end ml-auto" style="padding-top:1rem;padding-right:2rem;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100 justify-content-end collapseclass" id="navbarNav" style="padding-right:2rem; padding-left: 2rem;padding-top:1rem;background: white;">
+          <a href = "./index.html" class = "nav-item nav-link"><h3 class = "nav nav_black" style="justify-content: center;"> <span class="underline--magical"> Portfolio </span> </h3></a>
+          <div class="dropdown-divider"></div>
+          <a href = "./resume.html" class = "nav-item nav-link"><h3 class = "nav nav_black" style="justify-content: center;"> <span class="underline--magical"> Resume </span> </h3></a>
+          <div class="dropdown-divider"></div>
+          <a href = "./about.html" class = "nav-item nav-link"><h3 class = "nav nav_black" style="justify-content: center;"> <span class="underline--magical"> About </span> </h3></a>
+          <div class="dropdown-divider"></div>
+          <a href = "./blog.html" class = "nav-item nav-link active"><h3 class = "nav nav_black" style="justify-content: center;"> <span class="underline--magical"> Blog </span> </h3></a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </nav>
+
+      <div class="container-fluid project_landing">
+
+        <div class = "row project_row">
+          <div class = "col-md-4 col-xs-12">
+            <h1> Klean Kart </h1>
+            <p> Interactively track your carbon foodprint (carbon emissions from food) and
+              make more sustainable food purchases. It is now easier than ever to shift into environmentally friendly habits.
+            </p>
+          </div>
+        </div>
+
+        <div class = "row project_row" style="margin: 1rem 0 1.5rem 0; border: 1px solid #FFCA10; padding: 0.7rem;">
+          <img src="https://img.icons8.com/color/25/000000/person-skin-type-7.png" class = "detail_icon"> <p style = "color: #FFCA10; margin: 0 !important;">&nbsp;4 contributors &nbsp;&nbsp;&nbsp;</p>
+          <img src="https://img.icons8.com/office/16/000000/calendar.png" class = "detail_icon"> <p style = "color: #FFCA10; margin: 0 !important;"> &nbsp;2020 </p>
+        </div>
+
+        <div class = "row project_row">
+        <p style ="color: #FFCA10; margin: 0;"> <b>Tools & Languages:</b>&nbsp;&nbsp; </p>
+          <img src = "./images/figma.svg" class = "detail_icon" data-toggle="tooltip" title="Figma">&nbsp;&nbsp;
+          <img src="https://img.icons8.com/fluent/48/000000/android-os.png" class = "detail_icon" data-toggle="tooltip" title="Android Studio">&nbsp;&nbsp;
+          <img src="https://img.icons8.com/ultraviolet/40/000000/code.png" class = "detail_icon" data-toggle="tooltip" title="Java">
+        </div>
+        <div class = "row project_row">
+          <p style = "color: #FFCA10; margin: 0;"><b>Relevant skills:</b> UI, UX, Android Development, User Interviews</p>
+        </div>
+
+        <img src = "./images/kleankartlanding.png" class = "projectimages">
+
+        <div class = "row project_row" style = "text-align: left !important;">
+          <div class = "col-lg-6 col-xs-12">
+            <h1 class = "project_sectiontitle"> Problem </h1>
+            <p class = "project_section"> A quarter of the world's greenhouse gas emissions is from food production. As climate change continues to
+            ravage our planet, climate con  scious consumerism becomes an increasingly vital part of the conversation. The only way to
+            track carbon foodprints currently is through arduous google searches or apps that require manual entries for every food item used.
+            This hassle deters many consumers from tracking and becoming aware of their footprints.</p>
+
+            <h1 class = "project_sectiontitle"> Solution </h1>
+            <p class = "project_section"> Klean Kart leverages Android's Google Vision API to scan barcodes of food items, so users can easily check the environmental
+            impacts of grocery items as they shop and easily track the footprints of their purchases. Users also have the option to
+            search up food items and be given a list of sustainble alternatives.</p>
+
+            <img src = "./images/targetusers.png" class = "projectimages">
+
+            <h1 class = "project_sectiontitle"> From Paper Prototypes to Low-Fidelity Designs </h1>
+            <p> <b>Task Analysis - Key Workflows</b> </p>
+            <ul>
+              <li><p>Review progress reports to track progress towards a lower footprint</p></li>
+              <li><p>Scan barcodes, identify food products, and receive corresponding carbon emissions information </p></li>
+              <li><p>Add items to shopping cart and "check out" to update personal carbon foodprint history</p></li>
+              <li><p>Save previous searches to purchase at a later time (allow users to use the app as a shopping list, planning purchases ahead of time)</p></li>
+              <li><p>Quick search to scan a barcode just to check carbon emissions, with no intention of consuming the product (doesn't add item to cart or check out item)</p></li>
+
+            </ul>
+            <img src = "./images/lofi.png" style = "width: 100%; margin-top: 1rem;">
+
+
+            <h1 class = "project_sectiontitle"> Iterations to Final Product </h1>
+            <p>For the next few weeks, our team was busy conducting user interviews, usability tests, and heuristic evaluations to improve the
+            user experience of the app. We sought both our primary and secondary target users to get a better idea of how we can serve
+            their needs more effectively. </p>
+            <p> While we made numerous changes over the weeks, a few key highlights were:</p>
+            <ul>
+              <li><p>Dietary Preferences: app will automatically prioritize food items
+              that align with set preferences and warn users if searched items violate them. All
+               food items will display relevant dietary tags (e.g. vegan, dairy-free)</p></li>
+              <li><p>Store-Based Carts: users can organize their shopping carts based on store</p></li>
+              <li><p>Improved Quick Search: if users decide to purchase a product after a quick search for its carbon data,
+                they have option to add item to a new or existing cart</p></li>
+            </ul>
+
+            <p style = "margin-top: 4rem;"> <b>Final Prototype</b> </p>
+            <div class = "prototype">
+              <video autoplay muted loop playsinline>
+                <source src="./images/additem.mov" type="video/mp4">
+              </video>
+            </div>
+
+            <div style = "margin-bottom: 4rem;">
+              <h1> 01 </h1>
+              <p> Add item by lookup > different options given, ranked by CO2 emissions with dietary restrictions prioritized >
+                view CO2 emissions > adjust quantity > add to cart > view updated cart </p>
+            </div>
+
+            <div class = "prototype">
+              <video autoplay muted loop playsinline>
+                <source src="./images/scan.mov" type="video/mp4">
+              </video>
+            </div>
+
+            <div style = "margin-bottom: 4rem;">
+              <h1> 02 </h1>
+              <p> Quick scan > scan barcode > product identified > view CO2 emissions > have option to add to a cart </p>
+            </div>
+
+            <div class = "prototype">
+              <video autoplay muted loop playsinline>
+                <source src="./images/progress.mov" type="video/mp4">
+              </video>
+            </div>
+
+            <div style = "margin-bottom: 4rem;">
+              <h1> 03 </h1>
+              <p> View progress reports > current status > weekly report > total report </p>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+        </div>
+
+
+      <!-- FOOTERRRRRRRRRRR -->
+      <div class = "container-fluid footer"></div>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+  </html>
+
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
