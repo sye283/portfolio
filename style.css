@@ -35,16 +35,24 @@ body, html {
       font-size: 14px;
   }
   .section_pic {
-    align-items: center !important;
-    margin: 0 !important;
+    /* align-items: center !important;
+    margin: 0 !important; */
+    display: none !important;
   }
   .aboutme {
     margin: 5rem 15% 0 15%;
   }
   .resumewords {
     text-align: center;
-    margin: 0 15% 0 15%;
+    margin: 0 5% 0 5%;
   }
+  .landingtitle {
+    font-size: 3rem !important;
+  }
+  .word {
+    font-size: 3rem !important;
+  }
+
   .coffee {
     display: none;
   }
@@ -100,8 +108,10 @@ p {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  max-width: 100%;
-
+  /* max-width: 100%; */
+  width: 100% !important;
+  align-items: center !important;
+  margin: 0 !important
 }
 
 .landingtitle {
