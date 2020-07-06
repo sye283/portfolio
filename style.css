@@ -35,8 +35,11 @@ body, html {
       font-size: 14px;
   }
   .section_pic {
-    /* align-items: center !important;
-    margin: 0 !important; */
+    align-items: center !important;
+    margin: 0 !important;
+    /* display: none !important; */
+  }
+  .flower {
     display: none !important;
   }
   .aboutme {
