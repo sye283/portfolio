@@ -784,7 +784,8 @@ ul {
 /* /////////////// footer /////////////// */
 .footer {
   margin-top: 7.5rem;
-  height: 5rem;
+  bottom: 0;
+  min-height: 5rem;
   width: 100%;
   background-color: #FFCE1E;
 }
