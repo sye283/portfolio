@@ -5,6 +5,7 @@ body, html {
   font-size: 20px;
 }
 
+
 @media all and (min-width: 992px) {
   body, html {
       font-size: 20px;
@@ -780,12 +781,10 @@ ul {
 }
 
 
-
 /* /////////////// footer /////////////// */
 .footer {
-  margin-top: 7.5rem;
   bottom: 0;
-  min-height: 5rem;
+  height: 7.5rem;
   width: 100%;
-  background-color: #FFCE1E;
+  background-color: white;
 }
