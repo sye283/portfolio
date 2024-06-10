@@ -10,6 +10,9 @@ body, html {
   body, html {
       font-size: 20px;
   }
+  .landingbefore {
+    display: none !important;
+  }
 
 }
 
@@ -28,6 +31,13 @@ body, html {
     text-align: center;
     margin: 0 25% 0 25%;
   }
+  .landingafter {
+    display: none !important;
+  }
+  .landingimage {
+    height: 150px !important;
+    padding: 0rem !important;
+  }
 
 }
 
@@ -40,8 +50,12 @@ body, html {
     margin: 0 !important;
     /* display: none !important; */
   }
-  .flower {
+  .landingafter {
     display: none !important;
+  }
+  .landingimage {
+    height: 100px !important;
+    padding: 0rem !important;
   }
   .aboutme {
     margin: 5rem 15% 0 15%;
@@ -112,7 +126,7 @@ p {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  /* max-width: 100%; */
+  max-width: 100%;
   width: 100% !important;
   align-items: center !important;
   margin: 0 !important
@@ -166,14 +180,15 @@ p {
   height: auto;
   transition: 0.3s;
 }
-.flowergirl {
-  height: 23.5rem;
+.landingimage {
+  height: auto;
   width: auto;
-  margin-top: -2.75px;
-  margin-left: 1rem;
-  -webkit-transform: scaleX(-1);
-  transform: rotate(-15deg) scaleX(-1);
+  max-width: 100%;
+  max-height: 100%;
+  padding: 3rem;
+  border-radius: 50%;
 }
+
 .coffeebeans{
   height: 20rem;
   margin-top: -100%;
@@ -524,6 +539,8 @@ p {
   align-items: flex-end;
   flex-direction: column;
   text-align: right;
+  max-width: 100%;
+  max-height: 100%;
 }
 .section_pic_bear {
   display: flex;
