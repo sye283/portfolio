@@ -13,7 +13,7 @@ body, html {
   .landingbefore {
     display: none !important;
   }
-
+  
 }
 
 
@@ -23,6 +23,7 @@ body, html {
   }
   .section_pic {
     align-items: center !important;
+    padding-bottom: 50px;
   }
   .aboutme {
     margin: 5rem 25% 0 25%;
@@ -30,6 +31,9 @@ body, html {
   .resumewords {
     text-align: center;
     margin: 0 25% 0 25%;
+  }
+  .landingrow {
+    flex-direction: column !important;
   }
   .landingafter {
     display: none !important;
@@ -48,7 +52,11 @@ body, html {
   .section_pic {
     align-items: center !important;
     margin: 0 !important;
+    padding-bottom: 50px;
     /* display: none !important; */
+  }
+  .landingrow {
+    flex-direction: column !important;
   }
   .landingafter {
     display: none !important;
@@ -63,6 +71,7 @@ body, html {
   .resumewords {
     text-align: center;
     margin: 0 5% 0 5%;
+    max-width: 100%;
   }
   .landingtitle {
     font-size: 3rem !important;
@@ -124,9 +133,10 @@ p {
 
 .landingrow {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   flex-grow: 1;
-  max-width: 100%;
   width: 100% !important;
   align-items: center !important;
   margin: 0 !important
@@ -142,6 +152,9 @@ p {
   color: #484848;
   margin-top: 7rem;
   line-height: 1.2rem;
+}
+.resumewords {
+  max-width: 35vw;
 }
 
 .nav {
@@ -539,8 +552,8 @@ p {
   align-items: flex-end;
   flex-direction: column;
   text-align: right;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 500px;
+  max-height: 500px;
 }
 .section_pic_bear {
   display: flex;
