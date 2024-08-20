@@ -35,9 +35,9 @@ body, html {
     flex-direction: column-reverse;
     justify-content: center;
   }
-  /* .landingafter {
-    display: none !important;
-  } */
+  .landingafter {
+    margin-top: 100px;
+  }
   /* .landingimage {
     height: 150px !important;
     padding: 0rem !important;
@@ -58,9 +58,9 @@ body, html {
     flex-direction: column-reverse;
     justify-content: center;
   }
-  /* .landingafter {
-    display: none !important;
-  } */
+  .landingafter {
+    margin-top: 100px;
+  }
   /* .landingimage {
     height: 100px !important;
     padding: 0rem !important;
