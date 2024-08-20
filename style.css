@@ -10,10 +10,10 @@ body, html {
   body, html {
       font-size: 20px;
   }
-  .landingbefore {
+  /* .landingbefore {
     display: none !important;
-  }
-  
+  } */
+
 }
 
 
@@ -23,7 +23,6 @@ body, html {
   }
   .section_pic {
     align-items: center !important;
-    padding-bottom: 50px;
   }
   .aboutme {
     margin: 5rem 25% 0 25%;
@@ -33,15 +32,16 @@ body, html {
     margin: 0 25% 0 25%;
   }
   .landingrow {
-    flex-direction: column !important;
+    flex-direction: column-reverse;
+    justify-content: center;
   }
-  .landingafter {
+  /* .landingafter {
     display: none !important;
-  }
-  .landingimage {
+  } */
+  /* .landingimage {
     height: 150px !important;
     padding: 0rem !important;
-  }
+  } */
 
 }
 
@@ -52,32 +52,31 @@ body, html {
   .section_pic {
     align-items: center !important;
     margin: 0 !important;
-    padding-bottom: 50px;
     /* display: none !important; */
   }
   .landingrow {
-    flex-direction: column !important;
+    flex-direction: column-reverse;
+    justify-content: center;
   }
-  .landingafter {
+  /* .landingafter {
     display: none !important;
-  }
-  .landingimage {
+  } */
+  /* .landingimage {
     height: 100px !important;
     padding: 0rem !important;
-  }
+  } */
   .aboutme {
     margin: 5rem 15% 0 15%;
   }
   .resumewords {
     text-align: center;
     margin: 0 5% 0 5%;
-    max-width: 100%;
   }
   .landingtitle {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
   .word {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
 
   .coffee {
@@ -133,18 +132,20 @@ p {
 
 .landingrow {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  flex-wrap: nowrap !important;
+  gap: 20px;
+  max-width: 100%;
+  min-height: 100%;
   width: 100% !important;
   align-items: center !important;
   margin: 0 !important
 }
 
+
 .landingtitle {
   /* font-size: 3.5rem; */
-  font-size: 5vw;
+  font-size: 4vw;
   color: #484848;
 }
 .landingtext {
@@ -152,9 +153,6 @@ p {
   color: #484848;
   margin-top: 7rem;
   line-height: 1.2rem;
-}
-.resumewords {
-  max-width: 35vw;
 }
 
 .nav {
@@ -195,11 +193,10 @@ p {
 }
 .landingimage {
   height: auto;
-  width: auto;
-  max-width: 100%;
-  max-height: 100%;
-  padding: 3rem;
-  border-radius: 50%;
+  width: 17.5rem;
+  /* width: 100%; */
+  max-width:500px;
+  /* max-height: 100%; */
 }
 
 .coffeebeans{
@@ -238,7 +235,7 @@ p {
   opacity: 0;
   /* left:0; */
   /* font-size: 4rem; */
-  font-size: 5vw;
+  font-size: 4vw;
   color: white;
   margin-top: -1rem;
 }
@@ -552,8 +549,8 @@ p {
   align-items: flex-end;
   flex-direction: column;
   text-align: right;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 100%;
+  max-height: 100%;
 }
 .section_pic_bear {
   display: flex;
